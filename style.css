@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Italiana', serif;
+    background-color: #ffffff;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 370px;
+    max-width: 55%;
+    height: 70%;
+    margin: 10px;
+}
+
+#header-title {
+    display: block;
+    text-align: right;
+    margin: 3%;
+    font-size: 2.1em;
+}
+
+#title {
+    padding-top: 5px;
+    display: block;
+    font-size: 0.5em;
+    text-align: right;
+}
+
+.ruler {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+
+}
+
+.title-ruler {
+    visibility: hidden;
+}
+
+#work-title {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 2em;
+}
+
+#icons {
+    text-align: center;
+}
+
+.fa {
+    margin: 10px;
+    padding: 20px;
+    font-size: 35px;
+    width: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+#main-image {
+    width: 100%;
+    height: 400px;
+    margin: 10px auto;
+}
+
+#projects h3 {
+    font-size: 1.6em;
+    margin: 8px;
+}
+
+#projects p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+}
+
+#projects img {
+    width: 100%;
+    height: 100%;
+}
+
+#projects a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#projects a:hover {
+    box-shadow: 0 0 30px black;
+
+}
+
+#projects a h3,
+p {
+    padding-left: 10px;
+}
+
+
+@media screen and (min-width: 599px) and (max-width:1024px) {
+
+    body {
+        font-size: 1.5em;
+    }
+
+    #logo {
+        width: 330px;
+        height: 80%;
+        margin: 10px;
+    }
+
+    #main-image {
+        height: 500px;
+    }
+
+    .fa {
+
+        margin: 20px;
+        padding: 20px;
+        font-size: 50px;
+    }
+
+    #projects img {
+        width: 400px;
+        height: 300px;
+    }
+
+    #projects a {
+        display: flex;
+    }
+
+    #projects h3 {
+        text-align: center;
+        margin: 0;
+    }
+
+    #projects a h3,
+    p {
+        padding-left: 20px;
+    }
+
+    .title-ruler {
+        visibility: visible;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    #logo {
+        width: 300px;
+        max-width: 40%;
+        height: 70%;
+    }
+
+    #main-image {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 500px;
+
+    }
+
+    #projects {
+        flex-direction: row;
+    }
+
+    #projects a {
+        margin: 20px;
+    }
+
+    #logo {
+        margin-top: 15px;
+    }
+}
